@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>血腥大地</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body  oncontextmenu="window.event.returnValue=false">
+
+<div id="g-gameWindow">
+	<div id="load">
+		<ul id="sendWord">
+			<li>系统会根据fps实时优化游戏性能。当然你也可以关闭性能监测，根据实际情况手动配置</li>
+			<li>游戏操作：W-上 S-下 A-左 D-右 鼠标左键-射击 鼠标右键-撤销选定天赋/装弹</li>
+			<li>游戏画面在canvas上渲染，为了最好的体验请使用chrome浏览器</li>
+			<li>扫描二维码可以加我的微信，最近在努力找工作 ᕦ( ᐛ )ᘎ</li>
+		</ul>
+		<div id="m-me"></div>
+		<p id="loading"></p>
+		<button id="enterTalent" class="enter" disabled="disabled">配置天赋</button>
+	</div>
+	
+	<div id="g-main">
+		<div id="box">
+			<div class="m-mask"></div>
+
+			<div id="talent">
+
+				<div class="m-item">
+					<h2 class="f-color1">勇猛</h2>
+
+					<div class="l1" data-name="a1" data-click=1 data-num=2 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+
+					<div class="l21" data-name="a2" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+
+					<div class="l22" data-name="a2" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+
+					<div class="l3" data-name="a3" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+
+					<div class="l4" data-name="a4" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>	
+				</div>
+
+				<div class="m-item">
+					<h2 class="f-color2">迅捷</h2>
+					<div class="l1" data-name="b1" data-click=1 data-num=2 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+					<div class="l21" data-name="b2" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+					<div class="l22" data-name="b2" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+					<div class="l3" data-name="b3" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+					<div class="l4" data-name="b4" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+				</div>
+
+				<div class="m-item">
+					<h2 class="f-color3">坚韧</h2>
+					<div class="l1" data-name="c1" data-click=1 data-num=2 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+					<div class="l21" data-name="c2" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+					<div class="l22" data-name="c2" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+					<div class="l3" data-name="c3" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+					<div class="l4" data-name="c4" data-click=0 data-num=1 data-have=0>
+						<h1 class="talentIndex"></h1>
+					</div>
+				</div>
+			</div>
+
+			<h3 id="m-points">可用点数: <span id="f-points"></span></h3>
+
+			<button id="enter" class="enter" disabled="disabled">开始游戏</button>
+		</div>
+
+		<div id="talentContent">
+			<h2></h2>
+			<p></p>
+		</div>
+
+		<div id="brower">
+			<div id="g-paused"><p>游戏暂停</p></div>
+			<canvas id="canvas" width="800" height="600">Canvas not supported</canvas>
+		</div>
+		
+	</div>
+
+		<div class="m-trigger" id="f-monitor" data-name="性能监测:" data-attribute="开" data-state=1></div>
+		<div class="m-trigger" id="f-sound" data-name="游戏音效:" data-attribute="开" data-state=1></div>
+		<div class="m-trigger" id="f-shadow" data-name="阴影效果:" data-attribute="开" data-state=1></div>
+		<div class="m-trigger" id="f-body" data-name="残骸刷新:" data-attribute="关" data-state=1></div>
+		<div id="f-triggerContent"><p></p></div>	
+
+		<div id="g-end">
+			<div class="m-mask"></div>
+			<ul id="m-showScore">
+				<li>坚持时间：<span></span></li>
+				<li>所用武器：<span></span></li>
+				<li>最终得分：<span></span></li>
+			</ul>
+			<button id="f-toTalent" class="enter" >再来一局</button>
+		</div>
+
+	</div>
+
+</div>
+<script type="text/javascript" src="./js/game-engine.js"></script>
+<script type="text/javascript" src="./js/data.js"></script>
+<script type="text/javascript" src="./js/dom.js"></script>
+<script type="text/javascript" src="./js/game-loop.js"></script>
+</body>
+</html>

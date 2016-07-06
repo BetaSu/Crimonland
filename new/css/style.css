@@ -1,0 +1,57 @@
+#g-gameWindow {position: relative;width: 800px;height: 600px;margin: 50px auto;}
+
+/*加载界面*/
+#load {position: relative;width: 800px;height: 600px;background: #000;}
+#sendWord {color: #fff;width: 650px;margin: 0 auto;padding-top: 40px;}
+#sendWord li {padding: 10px;}
+#m-me {position: absolute;top: 40%;left: 37%;width: 200px;height: 200px;background: url(../images/me.jpg) no-repeat;background-size: contain;}
+#loading {position: absolute;color: #fff;left: 43%;bottom: 60px;}
+#enterTalent {} 
+
+/*主界面*/
+#g-main {width: 800px;height: 600px;display: none;}
+#box {position: relative;width: 800px;height: 600px;background: url(../images/bkg1.jpg) -200px -40px;}
+.m-mask {position: absolute;width: 100%;height: 100%;background: #000;opacity: 0.5;}
+#m-points {position: absolute;left: 670px;bottom: 10px;color: #999;}
+.talentreset {position: absolute;left: 300px;bottom: 10px;color: #fff;border: none;}
+.enter {position: absolute;left: 330px;bottom: 10px;width: 140px;height: 30px;color: #fff;border: none;background: #666;font: bold 15px "微软雅黑";}
+#talent {width: 800px;margin: 0 auto;}
+#talent h2 {margin: 20px 20px;font: bold 25px "仿宋";}
+.m-item {display: inline-block;position: relative;width: 260px;height: 600px;border-left: 1px solid #ccc;}
+#brave {position: absolute;left:0;width: 265px;height:600px;}
+.f-color3 {color: #2492ee;opacity: 0.9;}
+.f-color1 {color: #f42122;opacity: 0.9;}
+.f-color2 {color: #22ece0;opacity: 0.9;}
+.m-item div {width: 50px;height: 50px;background: #fff;}
+.l1 {position: absolute;left: 90px;top: 100px;}
+.l21 {position: absolute;left: 40px;top: 190px;}
+.l22 {position: absolute;left: 140px;top: 190px;}
+.l3 {position: absolute;left: 90px;top: 280px;}
+.l4 {position: absolute;left: 90px;top: 380px;}
+.m-item .talentIndex {color: #ccc;font-size: 17px;position: absolute;top:50px;left: 12px;} 
+#talentContent {position: fixed;width: 240px;height: 125px;border-radius: 8px;background: rgba(0,0,0,0.4);border: 1px solid #000;display: none;}
+#talentContent h2 {color: #5eed3a;padding: 10px;font: 18px "微软雅黑";}
+#talentContent p {color: #e7edf2;padding: 0 10px 10px 10px;font: 15px "微软雅黑";}
+
+/*canvas窗口*/
+#brower {width: 800px;height: 600px;display: none;position: relative;}
+#canvas {border: 1px solid #ccc;display: inline-block;}
+
+/*侧面按钮*/
+.m-trigger {position: absolute;left: -50px;width: 40px;height: 40px;border: 2px solid #000;border-radius: 10px;cursor: pointer;}
+.m-trigger:hover {border: 2px solid #1af2ea; }
+#f-monitor {top:0;background:#34d12c url(../images/sprite.png) 0 -1332px;}
+#f-sound {top:50px;background:#34d12c url(../images/sprite.png) -40px -1332px;}
+#f-shadow {top:100px;background:#34d12c url(../images/sprite.png) -80px -1332px;}
+#f-body {top: 150px;background:#f21a2e url(../images/sprite.png) -120px -1332px;}
+#f-triggerContent {position: fixed;z-index: 10;width: 100px;height: 20px;border-radius: 8px;background: rgba(200,100,0,0.4);border: 1px solid #000;display: none;color: #fff;padding-left: 10px;}
+
+/*游戏暂停*/
+#g-paused {background: rgba(0,0,0,0.5);position: absolute;width: 100%;height: 100%;display: none;}
+#g-paused p {color: white;font:normal 40px/600px "微软雅黑";margin: 0 auto;width: 200px;}
+
+/*游戏结束、高分榜*/
+#g-end {position: relative;width: 800px;height: 600px;background: #000 url(../images/bkg1.jpg)-200px -40px;display: none;}
+#m-showScore {position: absolute;left: 23%;top: 18%;padding-left: 40px;color: #fff;}
+#m-showScore li {font-size: 20px;padding-top: 40px;list-style: none;}
+#f-toTalent {left: 40%;cursor: pointer;background: #f42122;}
