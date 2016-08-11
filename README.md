@@ -1,5 +1,5 @@
 # Crimonland
-<h2>这是我制作的网页版血腥大地</h2>
+<h2>网页版血腥大地</h2>
 <img src="https://github.com/BetaSu/Crimonland/blob/master/new/images/bkg1.jpg"/> <br/>
 <ul style="font-family:'微软雅黑'">
 		<li>游戏绘制：基于canvas绘制。</li>
