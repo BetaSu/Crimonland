@@ -61,7 +61,7 @@ function start () {
 	doctorAtt=pA.doctorAtt;
 	f5Timer.start();
 	f5Interval.start();
-
+ 	//?
 	//储存所有怪物属性  @
 	var monsterType=[
 	{type:0,ATK:4,speed:30,life:40,antiKick:0,cell:zombieCell,dieCell:zombieDieCell,interval:50,dieInterval:15,x:-15,y:-15,width:55,height:32,radius:15,score:10},
