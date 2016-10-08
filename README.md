@@ -1,5 +1,4 @@
-# Crimonland
-<h2>血腥大地</h2>
+# Crimonland 血腥大地
 ## <a href="https://betasu.github.io/Crimonland/new/ ">点击进入游戏</a>
 <img src="https://github.com/BetaSu/Crimonland/blob/master/new/images/bkg1.jpg"/> <br/>
 <ul style="font-family:'微软雅黑'">
