@@ -1,5 +1,6 @@
 # Crimonland
-<h2>网页版血腥大地</h2>
+<h2>血腥大地</h2>
+## <a href="https://betasu.github.io/Crimonland/new/ ">点击进入游戏</a>
 <img src="https://github.com/BetaSu/Crimonland/blob/master/new/images/bkg1.jpg"/> <br/>
 <ul style="font-family:'微软雅黑'">
 		<li>游戏绘制：基于原生H5 canvas绘制。</li>
