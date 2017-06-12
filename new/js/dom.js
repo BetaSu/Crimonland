@@ -51,7 +51,7 @@ var mode=(function  () {
 		loading=engine.$("loading");
 		loading.innerText="加载中 "+percentage+"%";
 		
-		if (percentage==100) {
+		if (percentage>=100) {
 			clearInterval(resourceLoad);
 			pics.imageReady=true;
 			sounds.soundsReady=true;
